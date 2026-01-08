@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'resume_templates/creative.css' %}">
+</head>
+
+<body>
+    <div class="resume-creative">
+        <div class="sidebar">
+            <h2>{{ resume.full_name }}</h2>
+            <p>{{ resume.email }}</p>
+            <p>{{ resume.phone }}</p>
+            <p>{{ resume.location }}</p>
+            <p>LinkedIn: {{ resume.linkedin }}</p>
+            <p>GitHub: {{ resume.github }}</p>
+        </div>
+
+        <h2>Education</h2>
+        <ul>
+            {% for item in resume.education %}
+            <li>{{ item.degree }} - {{ item.institute }} ({{ item.year }})</li>
+            {% endfor %}
+        </ul>
+
+
+        <h2>Experience</h2>
+        {% for exp in resume.experience %}
+        <div>{{ exp.role }} - {{ exp.company }} ({{ exp.year }})</div>
+        {% endfor %}
+
+        <h2>Skills</h2>
+        <div>{{ resume.skills|join:", " }}</div>
+
+        <h2>Projects</h2>
+        {% for proj in resume.projects %}
+        <div>{{ proj.name }}: {{ proj.description }}</div>
+        {% endfor %}
+    </div>
+    </div>
+</body>
+
+</html>

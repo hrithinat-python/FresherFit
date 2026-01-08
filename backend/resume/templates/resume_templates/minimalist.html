@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'resume_templates/minimalist.css' %}">
+</head>
+<body>
+<div class="resume-minimalist">
+    <h1>{{ resume.full_name }}</h1>
+    <p>{{ resume.email }} | {{ resume.phone }} | {{ resume.location }}</p>
+
+    {% for section in ['education', 'experience', 'projects', 'skills', 'certifications', 'training'] %}
+        <h2>{{ section|capfirst }}</h2>
+        <ul>
+            {% for item in resume[section] %}
+                {% if item.name %}<li>{{ item.name }}: {{ item.description }}</li>{% elif item.degree %}<li>{{ item.degree }} - {{ item.school }} ({{ item.year }})</li>{% else %}<li>{{ item }}</li>{% endif %}
+            {% endfor %}
+        </ul>
+    {% endfor %}
+</div>
+</body>
+</html>

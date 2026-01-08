@@ -1,0 +1,9 @@
+body { font-family: 'Helvetica', sans-serif; margin: 30px; background: #f9f9f9; color: #333; }
+.resume-modern { max-width: 800px; margin: auto; background: #fff; padding: 20px; border-radius: 8px; }
+.header h1 { font-size: 36px; margin-bottom: 5px; color: #1a73e8; }
+.header p { font-size: 14px; }
+.section { margin-top: 20px; }
+.section h2 { font-size: 20px; border-bottom: 2px solid #1a73e8; margin-bottom: 10px; }
+.edu-item, .exp-item { margin-bottom: 5px; }
+.skills { display: flex; gap: 10px; flex-wrap: wrap; }
+.skill { background: #1a73e8; color: #fff; padding: 5px 10px; border-radius: 4px; font-size: 12px; }

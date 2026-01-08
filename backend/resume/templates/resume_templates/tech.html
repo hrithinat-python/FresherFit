@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'resume_templates/tech.css' %}">
+</head>
+<body>
+<div class="resume-tech">
+    <div class="header">
+        <h1>{{ resume.full_name }}</h1>
+        <p>{{ resume.email }} | {{ resume.phone }} | {{ resume.location }}</p>
+        <p>LinkedIn: {{ resume.linkedin }} | GitHub: {{ resume.github }}</p>
+    </div>
+
+    <h2>Skills</h2>
+    <div class="skills">
+        {% for skill in resume.skills %}
+        <div class="skill-bar">{{ skill }}</div>
+        {% endfor %}
+    </div>
+
+    <h2>Experience</h2>
+    {% for exp in resume.experience %}
+    <div class="exp-item">
+        <strong>{{ exp.role }}</strong> - {{ exp.company }} ({{ exp.year }})
+    </div>
+    {% endfor %}
+
+    <h2>Projects</h2>
+    {% for proj in resume.projects %}
+    <div class="proj-item">
+        <strong>{{ proj.name }}</strong>: {{ proj.description }}
+    </div>
+    {% endfor %}
+</div>
+</body>
+</html>

@@ -1,0 +1,5 @@
+body { font-family: 'Times New Roman', serif; margin: 40px; color: #000; }
+.resume-minimalist h1 { font-size: 34px; margin-bottom: 5px; }
+h2 { font-size: 18px; margin-top: 20px; border-bottom: 1px solid #000; }
+ul { list-style-type: none; padding-left: 0; }
+li { font-size: 14px; margin: 2px 0; }

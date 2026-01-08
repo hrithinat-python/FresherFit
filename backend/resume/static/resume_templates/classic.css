@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #000;
+    margin: 30px;
+}
+
+.resume-container h1 {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.resume-container h2 {
+    font-size: 20px;
+    margin-top: 20px;
+    border-bottom: 1px solid #000;
+}
+
+.resume-container p, .resume-container li {
+    font-size: 14px;
+    margin: 3px 0;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}

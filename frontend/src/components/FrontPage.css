@@ -1,0 +1,32 @@
+.front-container {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #007bff, #00c6ff);
+  color: #fff;
+  height: 100vh;
+}
+
+.front-container h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.front-container p {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.front-container button {
+  padding: 15px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #007bff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.front-container button:hover {
+  background-color: #e0e0e0;
+}
