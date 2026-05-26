@@ -1,5 +1,5 @@
 body {
-  background-color: #f4f7f9;
+  background-color: #ffffff;
   font-family: "Arial", sans-serif;
 }
 
@@ -12,7 +12,7 @@ body {
 
 .title {
   text-align: center;
-  color: #007bff;
+  color: #ffffff;
   margin-bottom: 30px;
 }
 
@@ -26,14 +26,14 @@ body {
 .form-section {
   flex: 1 1 300px;
   background-color: #fff;
-  padding: 20px;
+  padding: 40px;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
 }
 
 .form-section h2 {
   margin-bottom: 15px;
-  color: #007bff;
+  color: #0088ff;
 }
 
 .form-section input,
@@ -73,9 +73,9 @@ body {
 }
 
 .resume-section h2 {
-  color: #007bff;
+  color: #0088ff;
   margin-bottom: 5px;
-  border-bottom: 1px solid #007bff;
+  border-bottom: 1px solid #0088ff;
   display: inline-block;
 }
 
@@ -89,8 +89,8 @@ body {
   display: block;
   margin: 20px auto;
   padding: 12px 25px;
-  background-color: #007bff;
-  color: #fff;
+  background-color: #0088ff;
+  color: #000000;
   font-size: 16px;
   border: none;
   border-radius: 6px;
@@ -100,4 +100,11 @@ body {
 
 .download-btn:hover {
   background-color: #0056b3;
+}
+.back{
+  background-color: #ffffff;
+  color: rgb(54, 146, 217);
+  border-radius: 30px;
+  height: 25px;
+  border: #0088ff;
 }

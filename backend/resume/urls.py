@@ -4,8 +4,8 @@ from .views import ResumeViewSet, TemplateViewSet
 
 router = DefaultRouter()
 router.register(r'resume', ResumeViewSet)
-router.register(r'resume/templates', TemplateViewSet, basename='template')
+router.register(r'templates', TemplateViewSet, basename='template')
 
 urlpatterns = [
-    path('api/', include(router.urls)),
+    path('', include(router.urls)),
 ]
